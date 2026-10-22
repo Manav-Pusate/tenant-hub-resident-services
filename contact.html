@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | TenantHub</title>
+    <link rel="stylesheet" href="style.css?v=2" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="index.html">Tenant<span>Hub</span></a
+      ><input class="menu-toggle" id="menu-toggle" type="checkbox" /><label
+        class="menu-icon"
+        for="menu-toggle"
+      ></label>
+      <nav>
+        <a href="index.html">Home</a><a href="services.html">Services</a
+        ><a href="dashboard.html">Dashboard</a
+        ><a href="community.html">Community</a
+        ><a href="announcements.html">Updates</a
+        ><a href="emergency.html">Emergency</a
+        ><a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">WE ARE HERE TO HELP</p>
+          <h1>Contact your building team.</h1>
+          <p>
+            Ask about a service, report a maintenance issue or send any question
+            directly to the building team.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h2>Useful contacts</h2>
+            <div class="contact-item">
+              <strong>Landlord</strong>
+              <p>
+                Manav Pusate &middot;
+                <a href="tel:+919172907666">+91 91729 70766</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <strong>Maintenance desk</strong>
+              <p>
+                Mon-Sat, 9 AM-6 PM &middot;
+                <a href="tel:+919811223344">Call now</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <strong>Email support</strong>
+              <p>
+                <a href="mailto:manavpusate@gmail.com">manavpusate@gmail.com</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <strong>Building location</strong>
+              <p>
+                <a
+                  href="https://maps.google.com/?q=Green+Valley+Apartments"
+                  target="_blank"
+                  >Open in Google Maps
+                </a>
+              </p>
+            </div>
+          </div>
+          <form
+            action="mailto:manavpusate@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <h2>Send a request</h2>
+            <label for="name">Your name</label
+            ><input id="name" name="name" required /><label for="service"
+              >What do you need?</label
+            ><select id="service" name="service">
+              <option>Maintenance</option>
+              <option>Cleaning</option>
+              <option>Laundry</option>
+              <option>Other</option></select
+            ><label for="message">Message</label
+            ><textarea id="message" name="message" required></textarea
+            ><button type="submit">Send request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; 2026 TenantHub</span><a href="index.html">Back to home</a>
+      </div>
+    </footer>
+  </body>
+</html>
