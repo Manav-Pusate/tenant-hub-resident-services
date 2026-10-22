@@ -28,6 +28,7 @@ body {
   color: var(--muted);
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -81,7 +82,27 @@ nav a.active {
   color: var(--green);
   cursor: pointer;
   display: none;
-  font-size: 27px;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+.menu-icon::before,
+.menu-icon::after {
+  background: currentColor;
+  border-radius: 2px;
+  content: "";
+  height: 2px;
+  left: 2px;
+  position: absolute;
+  transition: 0.2s;
+  width: 26px;
+}
+.menu-icon::before {
+  box-shadow: 0 16px currentColor;
+  top: 4px;
+}
+.menu-icon::after {
+  top: 12px;
 }
 .hero {
   align-items: center;
@@ -951,6 +972,14 @@ footer a {
   .menu-toggle:checked ~ nav {
     display: flex;
   }
+  .menu-toggle:checked + .menu-icon::before {
+    box-shadow: none;
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle:checked + .menu-icon::after {
+    box-shadow: none;
+    transform: translateY(8px) rotate(-45deg);
+  }
   .container {
     padding: 0 22px;
   }
@@ -1013,5 +1042,27 @@ footer a {
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
+  }
+  .page-hero {
+    padding: 58px 0;
+  }
+  .page-hero h1 {
+    font-size: 42px;
+  }
+  .announcement-top,
+  .announcement-footer,
+  .update-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .info-row {
+    gap: 18px;
+  }
+  .info-row span {
+    text-align: right;
+  }
+  .button {
+    max-width: 100%;
   }
 }
